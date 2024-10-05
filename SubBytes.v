@@ -1,0 +1,20 @@
+module SubBytes(state_in, state_out);
+	input [127:0] state_in;
+	output [127:0] state_out;
+	Sbox S0(state_in[7:0], state_out[7:0]);
+	Sbox S1(state_in[15:8], state_out[15:8]);
+	Sbox S2(state_in[23:16], state_out[23:16]);
+	Sbox S3(state_in[31:24], state_out[31:24]);
+	Sbox S4(state_in[39:32], state_out[39:32]);
+	Sbox S5(state_in[47:40], state_out[47:40]);
+	Sbox S6(state_in[55:48], state_out[55:48]);
+	Sbox S7(state_in[63:56], state_out[63:56]);
+	Sbox S8(state_in[71:64], state_out[71:64]);
+	Sbox S9(state_in[79:72], state_out[79:72]);
+	Sbox S10(state_in[87:80], state_out[87:80]);
+	Sbox S11(state_in[95:88], state_out[95:88]);
+	Sbox S12(state_in[103:96], state_out[103:96]);
+	Sbox S13(state_in[111:104], state_out[111:104]);
+	Sbox S14(state_in[119:112], state_out[119:112]);
+	Sbox S15(state_in[127:120], state_out[127:120]);
+endmodule
